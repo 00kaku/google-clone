@@ -1,3 +1,4 @@
+import PaginationButton from './PaginationButton'
 function SearchResults ({results}) {
 	return (
 		<div className="mx-auto w-full px-3 sm:pl-[5%]
@@ -28,6 +29,8 @@ function SearchResults ({results}) {
 				{result.snippet}</p>
 				</div>
 			))}
+
+			<PaginationButton />
 		</div>
 	)
 }

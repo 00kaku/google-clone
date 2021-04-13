@@ -16,6 +16,7 @@ function Search ({ results }) {
 			<Header />
 
 			{/* Search Results */}
+			{console.log(results)}
 			<SearchResults results={results} />
 		</div>
 	)
