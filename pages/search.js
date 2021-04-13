@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import SearchResults from "../components/SearchResults";
 import Response from "../Response";
 import { useRouter } from "next/router";
 function Search ({ results }) {
@@ -9,13 +10,13 @@ function Search ({ results }) {
 	return (
 		<div>
 			<Head>
-				<title>Search Results</title>
+				<title>{router.query.term}- Google Search</title>
 			</Head>
 			{/* Header */}
 			<Header />
 
 			{/* Search Results */}
-			{console.log(results)}
+			<SearchResults results={results} />
 		</div>
 	)
 }
