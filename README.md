@@ -15,5 +15,7 @@ This is a google clone using the NextJs framework and google search api. User ca
 2. Inside the folder run **npm install** to install the dependencies.
 3. Use **npm run dev** to run the project on **localhost:3000**
 4. To use real time searching and not dummy data go to google dashboard and create a key for search api and put it in variable **API_KEY** in **next.config.js**.
+  
   4.1 Create a context key using the link **https://cse.google.com/cse/all** and put it in the variable **CONTEXT_KEY** in **next.config.js**.
+  
   4.2 In **/pages/Search.js** set the **useDuummydata= false**, Now you can use real time google search functionality 
